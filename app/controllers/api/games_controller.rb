@@ -1,5 +1,5 @@
 class Api::GamesController < ApplicationController  
-    before_action :set_game, only: [:show, :edit, :destroy]
+    before_action :set_game, only: [:show, :update, :destroy]
 
     def index 
         render json: Game.all
